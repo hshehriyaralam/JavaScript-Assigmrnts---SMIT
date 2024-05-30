@@ -109,9 +109,36 @@ document.write(`Total Currency in PKR : ${totalCurrency} <br> <br>`);
 // Logic 
 let random = 5;
 let Calculations = ((random+5)*10)/2;
-document.write(Calculations);
+document.write(Calculations, `<br> <br>`);
 
 
+// Age Calculator
+let birtYear = 2024;
+let CurrentYear = 2004;
+let ageCalculate = birtYear - CurrentYear;
+document.write(`Your Age is ${ageCalculate} <br> <br>`);
+
+
+// Geometrizer 
+let radiusOfCircle = 20;
+let py = 3.142;
+let circumFerence = 2*py*radiusOfCircle;
+document.write(`Radius of Circle is ${radiusOfCircle} <br> <br>`);
+document.write(`The Circumference is ${circumFerence} <br> <br>` );
+
+
+let areaOfCircle = py*radiusOfCircle**2;
+
+document.write(`Area Of  Circle ${areaOfCircle} <br> <br> `);
+
+
+
+let favouriteSnack = `Chocolate chip`;
+let currentAge = 15;
+let maximumAge = 65;
+let amountSnacksPerDay = 3;
+let allCalculations = maximumAge  * amountSnacksPerDay / currentAgelv  ;
+document.write(allCalculations);
 
 
 
