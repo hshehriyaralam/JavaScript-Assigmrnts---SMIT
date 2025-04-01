@@ -93,14 +93,137 @@
 
 
 
-if ("car" < "cat"){
-    alert("car is smaller than cat")
-};
+// if ("car" < "cat"){
+//     alert("car is smaller than cat")
+// };
+
+
+
+// const Phy = document.getElementById('physics')
+// const Che = document.getElementById('Chemistry')
+// const Math1 = document.getElementById('Mathamtics')
+// const p = document.getElementById('p')
+// let grade = document.getElementById('grade')
+// const Remarks = document.getElementById('Remarks')
+// const TotalMarks = 300
 
 
 
 
+// document.getElementById('Calculate').addEventListener('click', () => {
+//    let Ph = Number(Phy.value)
+//    let Ch = Number(Che.value)
+//    let Ma = Number(Math1.value)
+//    const Sum = ((Ph+Ch+Ma) / TotalMarks) * 100
+   
+//    console.log("sum", Sum);
+//    console.log(Math.floor(Sum));
+//    p.innerHTML = Math.floor(Sum)+"%"
+//    if(Sum >= 80 && Sum <= 100){
+//        grade.innerHTML = "A-one"
+//        Remarks.innerHTML = "Excellent"
+//        Phy.value, Che.value , Math.value = null
+        
+//    } else if(Sum >= 70 && Sum  <= 79){
+//     grade.innerHTML = "A"
+//     Remarks.innerHTML = "Good"
+//    }else if(Sum >= 60 && Sum <= 69){
+//     grade.innerHTML = "B"
+//     Remarks.innerHTML = "You Need to Improve"
+//    }else if (Sum <= 59){
+//     grade.innerHTML = "Fail"
+//     Remarks.innerHTML = "Sorry"
+//      Phy.value, Che.value , Math.value = ""
+//    }else{
+//     grade.innerHTML = "Not Valid"
+//     Remarks.innerHTML = "Invalid"
+    
+//    }
+// })
 
 
 
+// document.getElementById('guess').addEventListener('click', () => {
+//     const GuesNumber = 7
+//     const inputValue = document.getElementById('inputValue')
 
+//   if(GuesNumber == inputValue.value){
+//     alert('Bingo! Correct answer')
+//   }else if(GuesNumber + 1 == inputValue.value){
+//     alert('Close enough to the correct answer')
+//   }else if(GuesNumber - 1 ==  inputValue.value){
+//     alert('Close enough to the correct answer')
+//   }
+//  else{
+//     alert('Wrong Answer')
+//   }
+//   GuesNumber  = ''
+// })
+
+// document.getElementById('Whether').addEventListener('click', () => {
+//     const inputValue = document.getElementById('inputValue')
+//     const result = inputValue.value % 3 === 0
+//    if(result){
+//     alert('Devide')
+//    }else{
+//     alert('Not Devide')
+//    }
+// })
+
+// document.getElementById('even').addEventListener('click', () => {
+//     const inputValue = document.getElementById('inputValue')
+//     if(inputValue.value % 2 == 0 ){
+//         alert('even')
+//     }else(
+//         alert('odd')
+//     )
+// })
+
+
+// document.getElementById('temp').addEventListener('click', () => {
+//      const inputValue = document.getElementById('inputValue')
+//      switch (true) {
+//         case inputValue.value >= 40:
+//             alert('It is too hot outside.')
+//             break;
+//         case inputValue.value >= 30:
+//             alert('The Weather today is Normal')
+//             break;
+//          case inputValue.value >= 20:
+//             alert('Today’s Weather is cool.')
+//             break;  
+//          case inputValue.value >= 10:
+//             alert('OMG! Today’s weather is so Cool.')
+//             break;       
+//         default:
+//             alert('Today`s Weather is so Hot')
+//             break;
+//      }
+    
+// })
+
+
+document.getElementById('calc').addEventListener('click', () => {
+    const inputValue1 = document.getElementById('inputValue1')
+    const inputValue2 = document.getElementById('inputValue2')
+    const Symbol = document.getElementById('Symbol')
+    let result;
+
+    if(Symbol.value == '*'  ){
+      result =   inputValue1.value * inputValue2.value
+    }else if(Symbol.value == '+'){
+      result =   inputValue1.value + inputValue2.value
+    }else if(Symbol.value == '-'){
+        result =   inputValue1.value - inputValue2.value
+      }
+      else if(Symbol.value == '/'){
+        result =   inputValue1.value / inputValue2.value
+      }
+      else if(Symbol.value == '%'){
+        result =   inputValue1.value % inputValue2.value
+      }
+    alert(result)
+    inputValue1.value = ''
+    inputValue2.value = ''
+    Symbol.value = ''
+})
